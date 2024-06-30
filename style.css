@@ -1,0 +1,808 @@
+                                                                                                                    /* default css start */
+                                                                                                                    
+                                                                                                                    * {
+                                                                                                                        margin: 0;
+                                                                                                                        padding: 0;
+                                                                                                                        box-sizing: border-box;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    body {
+                                                                                                                        margin: 0;
+                                                                                                                        background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url(/dist/img/fond.jpg);
+                                                                                                                        background-size: cover;
+                                                                                                                        background-attachment: fixed;
+                                                                                                                        background-position: center;
+                                                                                                                        font-weight: 400;
+                                                                                                                        line-height: 20px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .presentation .h1 {
+                                                                                                                        color: #d20f0f;
+                                                                                                                        text-decoration: none;
+                                                                                                                        text-transform: uppercase;
+                                                                                                                        font-family: Garamond, serif, monospace;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .header-area {
+                                                                                                                        background-position: center center;
+                                                                                                                        background-size: cover;
+                                                                                                                    }
+                                                                                                                    /* default css end */
+                                                                                                                    /* navbar regular css start */
+                                                                                                                    
+                                                                                                                    .navbar-area {
+                                                                                                                        background: rgba(0, 0, 0, .6);
+                                                                                                                        border-bottom: 1px solid #000;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .site-navbar {
+                                                                                                                        display: flex;
+                                                                                                                        justify-content: space-between;
+                                                                                                                        align-items: center;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    a.site-logo {
+                                                                                                                        font-size: 26px;
+                                                                                                                        font-weight: 800;
+                                                                                                                        text-transform: uppercase;
+                                                                                                                        color: rgba(245, 9, 9, 0.664);
+                                                                                                                        text-decoration: none;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .site-navbar ul {
+                                                                                                                        margin: 0;
+                                                                                                                        padding: 0;
+                                                                                                                        list-style: none;
+                                                                                                                        display: flex;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .site-navbar ul li a {
+                                                                                                                        color: #fff;
+                                                                                                                        padding: 20px;
+                                                                                                                        display: block;
+                                                                                                                        text-decoration: none;
+                                                                                                                        text-transform: uppercase;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .site-navbar ul li a:hover {
+                                                                                                                        background: rgba(255, 255, 255, .1);
+                                                                                                                    }
+                                                                                                                    /* navbar regular css end */
+                                                                                                                    /* nav-toggler css start */
+                                                                                                                    
+                                                                                                                    .nav-toggler {
+                                                                                                                        border: 3px solid #fff;
+                                                                                                                        padding: 5px;
+                                                                                                                        background-color: transparent;
+                                                                                                                        cursor: pointer;
+                                                                                                                        height: 39px;
+                                                                                                                        display: none;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .nav-toggler span,
+                                                                                                                    .nav-toggler span:before,
+                                                                                                                    .nav-toggler span:after {
+                                                                                                                        width: 28px;
+                                                                                                                        height: 3px;
+                                                                                                                        background-color: #fff;
+                                                                                                                        display: block;
+                                                                                                                        transition: .3s;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .nav-toggler span:before {
+                                                                                                                        content: '';
+                                                                                                                        transform: translateY(-9px);
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .nav-toggler span:after {
+                                                                                                                        content: '';
+                                                                                                                        transform: translateY(6px);
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .nav-toggler.toggler-open span {
+                                                                                                                        background-color: transparent;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .nav-toggler.toggler-open span:before {
+                                                                                                                        transform: translateY(0px) rotate(45deg);
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .nav-toggler.toggler-open span:after {
+                                                                                                                        transform: translateY(-3px) rotate(-45deg);
+                                                                                                                    }
+                                                                                                                    /* nav-toggler css start */
+                                                                                                                    /* intro-area css start */
+                                                                                                                    
+                                                                                                                    .intro-area {
+                                                                                                                        height: calc(100vh - 61px);
+                                                                                                                        display: flex;
+                                                                                                                        align-items: center;
+                                                                                                                        text-align: center;
+                                                                                                                        color: #fff;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .intro-area h2 {
+                                                                                                                        font-size: 50px;
+                                                                                                                        font-weight: 300;
+                                                                                                                        line-height: 50px;
+                                                                                                                        margin-bottom: 25px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .intro-area p {
+                                                                                                                        font-size: 18px;
+                                                                                                                    }
+                                                                                                                    /* intro-area css end */
+                                                                                                                    /* mobile breakpoint start */
+                                                                                                                    
+                                                                                                                    @media screen and (max-width: 767px) {
+                                                                                                                        .container {
+                                                                                                                            max-width: 720px;
+                                                                                                                        }
+                                                                                                                        /* navbar css for mobile start */
+                                                                                                                        .nav-toggler {
+                                                                                                                            display: block;
+                                                                                                                        }
+                                                                                                                        .site-navbar {
+                                                                                                                            min-height: 60px;
+                                                                                                                        }
+                                                                                                                        .site-navbar ul {
+                                                                                                                            position: absolute;
+                                                                                                                            width: 100%;
+                                                                                                                            height: calc(100vh - 60px);
+                                                                                                                            left: 0;
+                                                                                                                            top: 60px;
+                                                                                                                            flex-direction: column;
+                                                                                                                            align-items: center;
+                                                                                                                            border-top: 1px solid #444;
+                                                                                                                            background-color: rgba(0, 0, 0, .75);
+                                                                                                                            max-height: 0;
+                                                                                                                            overflow: hidden;
+                                                                                                                            transition: .3s;
+                                                                                                                        }
+                                                                                                                        .site-navbar ul li {
+                                                                                                                            width: 100%;
+                                                                                                                            text-align: center;
+                                                                                                                        }
+                                                                                                                        .site-navbar ul li a {
+                                                                                                                            padding: 25px;
+                                                                                                                        }
+                                                                                                                        .site-navbar ul li a:hover {
+                                                                                                                            background-color: rgba(255, 255, 255, .1);
+                                                                                                                        }
+                                                                                                                        .site-navbar ul.open {
+                                                                                                                            max-height: 100vh;
+                                                                                                                            overflow: visible;
+                                                                                                                        }
+                                                                                                                        .intro-area h2 {
+                                                                                                                            font-size: 36px;
+                                                                                                                            margin-bottom: 15px;
+                                                                                                                        }
+                                                                                                                        /* navbar css for mobile end */
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    *:before,
+                                                                                                                    *:after {
+                                                                                                                        box-sizing: border-box;
+                                                                                                                        margin: 0;
+                                                                                                                        padding: 0;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .theme1 {
+                                                                                                                        display: inline-block;
+                                                                                                                        vertical-align: top
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .theme1 .h3 {
+                                                                                                                        color: #fc15c6;
+                                                                                                                        text-decoration: none;
+                                                                                                                        text-transform: uppercase;
+                                                                                                                        align-items: center;
+                                                                                                                        font-family: 'Courier New', Courier, monospace;
+                                                                                                                        /* font-family: "Fira Sans", Arial, sans-serif; */
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .zo {
+                                                                                                                        background: linear-gradient(rgba(255, 255, 255, 0.037), rgba(0, 0, 0, .5)), url(video/game1.mp4);
+                                                                                                                        font-family: 'Open Sans', sans-serif;
+                                                                                                                        background-size: cover;
+                                                                                                                        background-attachment: fixed;
+                                                                                                                        background-position: center;
+                                                                                                                        font-weight: 2;
+                                                                                                                        line-height: 1px;
+                                                                                                                        width: 100%;
+                                                                                                                        box-shadow: 0 50px 50px rgba(255, 253, 253, 0.11);
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .F2 {
+                                                                                                                        background: linear-gradient(rgba(255, 255, 255, 0.037), rgba(0, 0, 0, .5)), url(video/factory.mp4);
+                                                                                                                        font-family: 'Open Sans', sans-serif;
+                                                                                                                        background-size: cover;
+                                                                                                                        font-size: 1Opx;
+                                                                                                                        font-weight: 2;
+                                                                                                                        line-height: 1px;
+                                                                                                                        width: 100%;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .F1 {
+                                                                                                                        width: 100%;
+                                                                                                                        max-width: 1440px;
+                                                                                                                        margin: 0 auto;
+                                                                                                                        padding: 0 15px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .F1 .h2 {
+                                                                                                                        color: #f00808;
+                                                                                                                        text-decoration: none;
+                                                                                                                        text-transform: uppercase;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    @import url('https://fonts.cdnfonts.com/css/the-halloween');
+                                                                                                                    .F3 {
+                                                                                                                        background: linear-gradient(rgba(255, 255, 255, 0.037), rgba(0, 0, 0, .5)), url(https://www.youtube.com/embed/uclgRkozGDY?si=Kl3XU8ywYai7f-lI);
+                                                                                                                        font-family: '', sans-serif;
+                                                                                                                        color: #d20f0f;
+                                                                                                                        background-size: cover;
+                                                                                                                        background-attachment: fixed;
+                                                                                                                        background-position: center;
+                                                                                                                        font-weight: 2;
+                                                                                                                        line-height: 5px;
+                                                                                                                        width: 100%;
+                                                                                                                        height: 100%;
+                                                                                                                        align-items: center;
+                                                                                                                        left: 40%;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .F3.h2 {
+                                                                                                                        font-family: '', sans-serif;
+                                                                                                                        color: #d20f0f;
+                                                                                                                        background-size: cover;
+                                                                                                                        background-attachment: fixed;
+                                                                                                                        background-position: center;
+                                                                                                                        font-weight: 2;
+                                                                                                                        line-height: 1px;
+                                                                                                                        width: 100%;
+                                                                                                                        padding: 10px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .v1 {
+                                                                                                                        font-family: 'Open Sans', sans-serif;
+                                                                                                                        background-size: cover;
+                                                                                                                        background-attachment: fixed;
+                                                                                                                        background-position: center;
+                                                                                                                        font-weight: 2;
+                                                                                                                        line-height: 1px;
+                                                                                                                        width: 100%;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .para2 {
+                                                                                                                        background-color: #fc15f04d;
+                                                                                                                        background-size: cover;
+                                                                                                                        background-attachment: fixed;
+                                                                                                                        background-position: center;
+                                                                                                                        font-weight: 5;
+                                                                                                                        line-height: 40px;
+                                                                                                                        font-size: 20px;
+                                                                                                                        width: 80%;
+                                                                                                                        color: #C1D6E1;
+                                                                                                                        padding: 5%;
+                                                                                                                        vertical-align: top
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .para3 {
+                                                                                                                        background-color: #0a020a4d;
+                                                                                                                        background-size: 'Open Sans', sans-serif;
+                                                                                                                        background-attachment: fixed;
+                                                                                                                        background-position: center;
+                                                                                                                        font-weight: 5;
+                                                                                                                        line-height: 40px;
+                                                                                                                        font-size: 20px;
+                                                                                                                        width: 100%;
+                                                                                                                        color: #C1D6E1;
+                                                                                                                        padding: 5%;
+                                                                                                                        height: 100%
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .para4 {
+                                                                                                                        background-color: #f8002128;
+                                                                                                                        font-family: 'Open Sans', sans-serif;
+                                                                                                                        background-size: cover;
+                                                                                                                        background-attachment: fixed;
+                                                                                                                        background-position: center;
+                                                                                                                        font-weight: 5;
+                                                                                                                        line-height: 20px;
+                                                                                                                        font-size: 20px;
+                                                                                                                        width: 100%;
+                                                                                                                        color: #C1D6E1;
+                                                                                                                        padding: 5%;
+                                                                                                                        height: 100%
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .soiree {
+                                                                                                                        background: linear-gradient(rgba(255, 255, 255, 0.037), rgba(0, 0, 0, .5)), url(https://www.youtube.com/embed/uclgRkozGDY?si=Kl3XU8ywYai7f-lI);
+                                                                                                                        font-family: '', sans-serif;
+                                                                                                                        color: #d20f0f;
+                                                                                                                        background-size: cover;
+                                                                                                                        background-attachment: fixed;
+                                                                                                                        background-position: center;
+                                                                                                                        font-weight: 2;
+                                                                                                                        line-height: 5px;
+                                                                                                                        width: 100%;
+                                                                                                                        height: 100%;
+                                                                                                                        align-items: center;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .F4 {
+                                                                                                                        background: linear-gradient(rgba(255, 255, 255, 0.037), rgba(0, 0, 0, .5)), url(/dist/video/game2.mp4);
+                                                                                                                        font-family: 'Open Sans', sans-serif;
+                                                                                                                        background-size: cover;
+                                                                                                                        font-size: 1Opx;
+                                                                                                                        font-weight: 2;
+                                                                                                                        line-height: 1px;
+                                                                                                                        width: 100%;
+                                                                                                                        color: #C1D6E1;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .F5 {
+                                                                                                                        font-family: 'Open Sans', sans-serif;
+                                                                                                                        background-size: cover;
+                                                                                                                        font-size: 1Opx;
+                                                                                                                        font-weight: 2;
+                                                                                                                        line-height: 1px;
+                                                                                                                        width: 100%;
+                                                                                                                        color: #fff;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .titre1 {
+                                                                                                                        color: rgba(240, 26, 169, 0.863);
+                                                                                                                        font-family: '', sans-serif;
+                                                                                                                        font-size: 1Opx;
+                                                                                                                        /* height: 100%;
+                                                                                                                    width: 100; */
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .titre4 {
+                                                                                                                        color: rgba(240, 26, 26, 0.678);
+                                                                                                                        font-family: sans-serif;
+                                                                                                                        font-size: 35px;
+                                                                                                                        background-size: cover;
+                                                                                                                        width: 100%;
+                                                                                                                        /* background-position: center; */
+                                                                                                                        /* height: 100%;
+                                                                                                                    width: 100; */
+                                                                                                                    }
+                                                                                                                    /* .figure {
+                                                                                                                        display: inline-block;
+                                                                                                                        width: 320px;
+                                                                                                                        vertical-align: top
+                                                                                                                    } */
+                                                                                                                    
+                                                                                                                    .titre5 {
+                                                                                                                        color: rgba(239, 239, 239, 0.834);
+                                                                                                                        font-family: '', sans-serif;
+                                                                                                                        font-size: 15px;
+                                                                                                                        background-size: cover;
+                                                                                                                        /* background-position: center; */
+                                                                                                                        /* height: 100%;
+                                                                                                                    width: 100; */
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .titre6 {
+                                                                                                                        color: rgba(206, 18, 134, 0.781);
+                                                                                                                        font-family: '', sans-serif;
+                                                                                                                        font-size: 15px;
+                                                                                                                        background-size: cover;
+                                                                                                                        /* background-position: center; */
+                                                                                                                        /* height: 100%;
+                                                                                                                    width: 100; */
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .para6 {
+                                                                                                                        font-family: 'Open Sans', sans-serif;
+                                                                                                                        background-size: cover;
+                                                                                                                        font-size: 1Opx;
+                                                                                                                        font-weight: 20px;
+                                                                                                                        line-height: 20px;
+                                                                                                                        width: 100%;
+                                                                                                                        color: #fff;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .para7 {
+                                                                                                                        font-family: 'Open Sans', sans-serif;
+                                                                                                                        background-size: cover;
+                                                                                                                        font-size: 20px;
+                                                                                                                        font-weight: 10;
+                                                                                                                        line-height: 20px;
+                                                                                                                        width: 100%;
+                                                                                                                        color: rgba(255, 255, 255, 0.829);
+                                                                                                                    }
+                                                                                                                    /* contacter debut */
+                                                                                                                    
+                                                                                                                     :root {
+                                                                                                                        --main-color: #d20f0f;
+                                                                                                                        --color-secondary: #C1D6E1;
+                                                                                                                        --writer-color: #fff;
+                                                                                                                        --writer-form: #d20f0f;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                     ::before,
+                                                                                                                     ::after {
+                                                                                                                        padding: 0;
+                                                                                                                        margin: 0;
+                                                                                                                        box-sizing: border-box;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    section {
+                                                                                                                        display: flex;
+                                                                                                                        justify-content: center;
+                                                                                                                        align-items: center;
+                                                                                                                        min-height: 100vh;
+                                                                                                                        /* background: var(--main-color); */
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    section::before {
+                                                                                                                        content: '';
+                                                                                                                        position: absolute;
+                                                                                                                        top: 0;
+                                                                                                                        left: 10%;
+                                                                                                                        width: 40%;
+                                                                                                                        height: 80%;
+                                                                                                                        /* background: var(--color-secondary); */
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .container {
+                                                                                                                        position: relative;
+                                                                                                                        min-width: 1100px;
+                                                                                                                        min-height: 550px;
+                                                                                                                        display: flex;
+                                                                                                                        z-index: 100;
+                                                                                                                    }
+                                                                                                                    /* ************** *\
+  Contact Info
+\* ************** */
+                                                                                                                    
+                                                                                                                    .container .contactInfo {
+                                                                                                                        position: absolute;
+                                                                                                                        top: 40px;
+                                                                                                                        width: 400px;
+                                                                                                                        height: calc(100% - 80px);
+                                                                                                                        background: var(--main-color);
+                                                                                                                        z-index: 1;
+                                                                                                                        padding: 20px;
+                                                                                                                        display: flex;
+                                                                                                                        justify-content: center;
+                                                                                                                        flex-direction: column;
+                                                                                                                        justify-content: space-between;
+                                                                                                                        box-shadow: 0 20px 25px rgba(0, 0, 0, .15);
+                                                                                                                        color: var(--writer-color);
+                                                                                                                        border-radius: 1em;
+                                                                                                                        box-shadow: 10px 0px 9px 2px rgba(250, 250, 250, 0.767);
+                                                                                                                        transition: .2s;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .container .contactInfo>div {
+                                                                                                                        transform: translateY(25%);
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .container .contactInfo h2 {
+                                                                                                                        font-size: 25px;
+                                                                                                                        font-weight: 600;
+                                                                                                                        position: relative;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .container .contactInfo ul.info li {
+                                                                                                                        position: relative;
+                                                                                                                        list-style: none;
+                                                                                                                        display: flex;
+                                                                                                                        margin: 25px 0;
+                                                                                                                        cursor: pointer;
+                                                                                                                        align-items: center;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .container .contactInfo ul.info li span:nth-child(1) {
+                                                                                                                        margin-right: 12px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .container .contactInfo ul.info li span:nth-child(2) {
+                                                                                                                        font-weight: 400;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .container .contactInfo ul.sci {
+                                                                                                                        position: relative;
+                                                                                                                        display: flex;
+                                                                                                                        justify-content: space-around;
+                                                                                                                        list-style: none;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .container .contactInfo ul.sci li a {
+                                                                                                                        text-decoration: none;
+                                                                                                                        color: var(--writer-color);
+                                                                                                                        font-size: 24px;
+                                                                                                                    }
+                                                                                                                    /* ************** *\
+   Formulaire
+\* ************** */
+                                                                                                                    
+                                                                                                                    .container .contactForm {
+                                                                                                                        position: absolute;
+                                                                                                                        padding: 90px 50px;
+                                                                                                                        padding-left: 300px;
+                                                                                                                        margin-left: 150px;
+                                                                                                                        width: calc(100% - 150px);
+                                                                                                                        height: 100%;
+                                                                                                                        /* background: var(--writer-color); */
+                                                                                                                        box-shadow: 0 50px 50px rgb(255, 253, 253);
+                                                                                                                        /* color: var(--writer-form); */
+                                                                                                                        border-radius: 1em;
+                                                                                                                        transition: .2s;
+                                                                                                                        font-family: 'Courier New', Courier, monospace;
+                                                                                                                        font-size: medium;
+                                                                                                                        color: #d20f0f;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .container .contactForm h2 {
+                                                                                                                        font-size: 24px;
+                                                                                                                        font-weight: 700;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .container .contactForm h2>span {
+                                                                                                                        text-transform: uppercase;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .container .contactForm .formBox {
+                                                                                                                        position: relative;
+                                                                                                                        display: flex;
+                                                                                                                        justify-content: space-between;
+                                                                                                                        flex-wrap: wrap;
+                                                                                                                        padding: 30px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .container .contactForm .formBox .inputBox {
+                                                                                                                        position: relative;
+                                                                                                                        margin-bottom: 35px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .container .contactForm .formBox .inputBox.w50 {
+                                                                                                                        width: 47%;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .container .contactForm .formBox .inputBox.w100 {
+                                                                                                                        width: 100%;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .container .contactForm .formBox .inputBox input,
+                                                                                                                    .container .contactForm .formBox .inputBox textarea {
+                                                                                                                        width: 100%;
+                                                                                                                        resize: none;
+                                                                                                                        padding: 5px 0;
+                                                                                                                        font-size: 18px;
+                                                                                                                        font-weight: 300;
+                                                                                                                        border: none;
+                                                                                                                        outline: none;
+                                                                                                                        border-bottom: 1px solid var(--main-color);
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .container .contactForm .formBox .inputBox textarea {
+                                                                                                                        height: 120px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .container .contactForm .formBox .inputBox span {
+                                                                                                                        position: absolute;
+                                                                                                                        left: 0;
+                                                                                                                        padding: 5px 0;
+                                                                                                                        pointer-events: none;
+                                                                                                                        transition: .3s;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .container .contactForm .formBox .inputBox input:focus~span,
+                                                                                                                    .container .contactForm .formBox .inputBox textarea:focus~span,
+                                                                                                                    .container .contactForm .formBox .inputBox input:valid~span,
+                                                                                                                    .container .contactForm .formBox .inputBox textarea:valid~span {
+                                                                                                                        transform: translateY(-20px);
+                                                                                                                        font-size: 12px;
+                                                                                                                        font-weight: 400;
+                                                                                                                        letter-spacing: 1px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .container .contactForm .formBox .inputBox input[type="submit"] {
+                                                                                                                        position: relative;
+                                                                                                                        cursor: pointer;
+                                                                                                                        background: var(--main-color);
+                                                                                                                        color: var(--writer-color);
+                                                                                                                        border: none;
+                                                                                                                        max-width: 150px;
+                                                                                                                        padding: 12px;
+                                                                                                                        transition: .2s;
+                                                                                                                        border-radius: 1em;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .container .contactForm .formBox .inputBox input[type="submit"]:hover {
+                                                                                                                        background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url(https://wallpaper.forfun.com/fetch/78/789b4e3d1c5cfb07f12539e2cf9e6af9.jpeg?w=1470&r=0.5625);
+                                                                                                                    }
+                                                                                                                    /* ---------------- *\
+    Responsive
+\* ---------------- */
+                                                                                                                    
+                                                                                                                    @media (max-width: 1200px) {
+                                                                                                                        .container {
+                                                                                                                            width: 90%;
+                                                                                                                            min-width: auto;
+                                                                                                                            margin: 20px;
+                                                                                                                            box-shadow: 0 20px 50px rgba(0, 0, 0, .2);
+                                                                                                                        }
+                                                                                                                        .container .contactInfo {
+                                                                                                                            top: 0;
+                                                                                                                            height: 550px;
+                                                                                                                            position: relative;
+                                                                                                                            box-shadow: none;
+                                                                                                                            border-radius: 1em 0 0 1em;
+                                                                                                                        }
+                                                                                                                        .container .contactForm {
+                                                                                                                            position: relative;
+                                                                                                                            width: calc(100% - 350px);
+                                                                                                                            padding-left: 0;
+                                                                                                                            margin-left: 0;
+                                                                                                                            padding: 40px;
+                                                                                                                            height: 550px;
+                                                                                                                            border-radius: 0 1em 1em 0;
+                                                                                                                        }
+                                                                                                                        .container .contactInfo>div {
+                                                                                                                            transform: translateY(50%);
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    @media (max-width: 991px) {
+                                                                                                                        /* section {
+            /* background: var(--main-color); */
+                                                                                                                        /* } */
+                                                                                                                        section::before {
+                                                                                                                            display: none;
+                                                                                                                        }
+                                                                                                                        .container {
+                                                                                                                            display: flex;
+                                                                                                                            flex-direction: column-reverse;
+                                                                                                                        }
+                                                                                                                        .container .contactForm {
+                                                                                                                            width: 100%;
+                                                                                                                            height: auto;
+                                                                                                                            border-radius: 1em 1em 0 0;
+                                                                                                                            text-align: center;
+                                                                                                                        }
+                                                                                                                        .container .contactInfo {
+                                                                                                                            width: 100%;
+                                                                                                                            height: auto;
+                                                                                                                            flex-direction: row;
+                                                                                                                            border-radius: 0 0 1em 1em;
+                                                                                                                        }
+                                                                                                                        .container .contactInfo ul.sci {
+                                                                                                                            position: relative;
+                                                                                                                            display: flex;
+                                                                                                                            align-items: center;
+                                                                                                                        }
+                                                                                                                        .container .contactInfo ul.sci li a {
+                                                                                                                            margin-right: 12px;
+                                                                                                                        }
+                                                                                                                        .container .contactInfo>div {
+                                                                                                                            transform: translateY(0%) translateX(40%);
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    @media (max-width: 600px) {
+                                                                                                                        .container .contactForm {
+                                                                                                                            padding: 25px;
+                                                                                                                            text-align: center;
+                                                                                                                        }
+                                                                                                                        .container .contactInfo {
+                                                                                                                            padding: 50px 50px 100px;
+                                                                                                                            flex-direction: column;
+                                                                                                                            align-items: center;
+                                                                                                                        }
+                                                                                                                        .container .contactInfo ul.sci .fab {
+                                                                                                                            margin-left: 20px;
+                                                                                                                            margin-top: 50px;
+                                                                                                                        }
+                                                                                                                        .container .contactInfo ul.sci li a {
+                                                                                                                            margin-right: 20px;
+                                                                                                                        }
+                                                                                                                        .container .contactForm .formBox .inputBox.w50 {
+                                                                                                                            width: 100%;
+                                                                                                                        }
+                                                                                                                        .container .contactInfo>div {
+                                                                                                                            transform: translateY(0%) translateX(0%);
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                    /* contacter fin */
+                                                                                                                    /* .multi-bg-example {
+        width: 100%;
+        height: 400px;
+        background-image: url(firefox.png), url(bubbles.png), linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: bottom right, left, right;
+    } */
+                                                                                                                    /* contactphp */
+                                                                                                                    
+                                                                                                                    .contact {
+                                                                                                                        font-family: 'Courier New', Courier, monospace;
+                                                                                                                        font-size: medium;
+                                                                                                                        color: #d20f0f;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    form {
+                                                                                                                        /* Center the form on the page */
+                                                                                                                        margin: 0 auto;
+                                                                                                                        width: 400px;
+                                                                                                                        /* Form outline */
+                                                                                                                        padding: 1em;
+                                                                                                                        border: 1px solid rgba(231, 6, 6, 0.733);
+                                                                                                                        border-radius: 1em;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    ul {
+                                                                                                                        list-style: none;
+                                                                                                                        padding: 0;
+                                                                                                                        margin: 0;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    form li+li {
+                                                                                                                        margin-top: 1em;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    label {
+                                                                                                                        /* Uniform size & alignment */
+                                                                                                                        display: inline-block;
+                                                                                                                        width: 90px;
+                                                                                                                        text-align: right;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    input,
+                                                                                                                    textarea {
+                                                                                                                        /* To make sure that all text fields have the same font settings
+                                                                                                                       By default, textareas have a monospace font */
+                                                                                                                        font: 1em sans-serif;
+                                                                                                                        /* Uniform text field size */
+                                                                                                                        width: 300px;
+                                                                                                                        box-sizing: border-box;
+                                                                                                                        /* Match form field borders */
+                                                                                                                        border: 1px solid rgb(248, 10, 10);
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    input:focus,
+                                                                                                                    textarea:focus {
+                                                                                                                        /* Additional highlight for focused elements */
+                                                                                                                        border-color: rgb(240, 12, 12);
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    textarea {
+                                                                                                                        /* Align multiline text fields with their labels */
+                                                                                                                        vertical-align: top;
+                                                                                                                        /* Provide space to type some text */
+                                                                                                                        height: 5em;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .button {
+                                                                                                                        /* Align buttons with the text fields */
+                                                                                                                        padding-left: 90px;
+                                                                                                                        /* same size as the label elements */
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    button {
+                                                                                                                        /* This extra margin represent roughly the same space as the space
+                                                                                                                       between the labels and their text fields */
+                                                                                                                        margin-left: .5em;
+                                                                                                                    }
+                                                                                                                    /* fin contactphp */
+                                                                                                                    
+                                                                                                                    .para8 {
+                                                                                                                        font-family: 'Open Sans', sans-serif;
+                                                                                                                        background-size: cover;
+                                                                                                                        font-size: 20px;
+                                                                                                                        font-weight: 10;
+                                                                                                                        line-height: 20px;
+                                                                                                                        width: 100%;
+                                                                                                                        color: rgba(255, 255, 255, 0.829);
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .bank {
+                                                                                                                        color: #f0086180;
+                                                                                                                        text-decoration: none;
+                                                                                                                        text-transform: uppercase;
+                                                                                                                    }
